@@ -15573,7 +15573,9 @@ const nr = Jg(cj),
             },
             body: {
               mobile_no: o,
-              captcha_token: y
+              captcha_token: y,
+              problem: "abc",
+              answer: 1
             }
           });
           Z.status_code === 200 ? (localStorage.setItem("user_phone", o), n((R = Z.data) != null && R.registered ? 3 : 2)) : p({

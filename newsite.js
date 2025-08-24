@@ -15573,7 +15573,9 @@ const nr = Jg(cj),
             },
             body: {
               mobile_no: o,
-              captcha_token: y
+              captcha_token: y,
+              problem: "abc",
+              answer: 1
             }
           });
           Z.status_code === 200 ? (localStorage.setItem("user_phone", o), n((R = Z.data) != null && R.registered ? 3 : 2)) : p({
@@ -18338,7 +18340,7 @@ const uw = ({
         try {
           const se = localStorage.getItem("access_token");
           p(!0);
-          const We = localStorage.getItem("is_edit") === "true" ? "/api/v2/payment/application-info-edit" : "/api/v2/payment/application-info-submit",
+          const We = localStorage.getItem("is_edit") === "true" ? "/api/v2/payment/application-info-edit" : "/api/v2/payment/application-info-submit-mu5h7k",
             Re = await Pe(We, {
               method: "POST",
               headers: {
@@ -18352,8 +18354,8 @@ const uw = ({
                 webfile_id_repeat: V,
                 ivac_id: de,
                 visa_type: O,
-                family_count: ae,
-                visit_purpose_t5y6u8: L,
+                family_count_y7u4r6: ae,
+                visit_purpose: L,
                 captcha_token: F
               }
             });
@@ -19265,7 +19267,7 @@ const uw = ({
       [Le, jt] = S.useState(!1),
       [Ne, $e] = S.useState(0),
       [ta, ot] = S.useState(""),
-      za = "0x4AAAAAABsibKPbEST3YJtP",
+      za = "0x4AAAAAABt10LeownJ9fyBe",
       [aa, wa] = S.useState("");
     S.useEffect(() => {
       (async () => {
@@ -19416,7 +19418,7 @@ const uw = ({
       const Ae = localStorage.getItem("access_token");
       try {
         jt(!0);
-        const Ce = await Pe("/api/v2/payment/pay-now-s1d3fr", {
+        const Ce = await Pe("/api/v2/payment/pay-now-a2f59h", {
           method: "POST",
           headers: {
             Accept: "application/json",
@@ -19424,7 +19426,7 @@ const uw = ({
             Authorization: `Bearer ${Ae}`
           },
           body: {
-            appointment_date: Q,
+            appointment_date_3y44u6: Q,
             appointment_time: ee,
             captcha_token: aa,
             selected_payment: {
@@ -19857,7 +19859,7 @@ const uw = ({
       [g, p] = S.useState(!1),
       [m, y] = S.useState(null),
       [x, T] = S.useState(""),
-      w = "0x4AAAAAABsibKPbEST3YJtP",
+      w = "0x4AAAAAABt10LeownJ9fyBe",
       N = o && o.length >= 12 && x !== "",
       [D, _] = S.useState(!1),
       V = {
